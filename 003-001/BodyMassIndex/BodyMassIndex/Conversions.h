@@ -12,6 +12,8 @@
 
 NSNumber * getBMI(float weightInKg, float heightInCm);
 NSString * getHeight(float inches);
+NSString * getBMILevel(NSNumber * bmi);
+
 float getKg(float lbs);
 float getLbs(float kg);
 float getCm(float inches);

@@ -24,6 +24,17 @@ NSNumber * getBMI(float weightInKg, float heightInCm)
 }
 
 /**
+ * Returns a string containing a qualifying description of the given BMI level.
+ */
+NSString * getBMILevel(NSNumber * bmi)
+{
+    if      ([bmi floatValue] < 18.5) return @"Underweight";
+    else if ([bmi floatValue] < 25)   return @"Normal";
+    else if ([bmi floatValue] < 30)   return @"Overweight";
+    else                              return @"Obese";
+}
+
+/**
  * Convers inches to a string that indicates feet and inches, e.g. 5'7"
  *
  * @param inches    height in inches
