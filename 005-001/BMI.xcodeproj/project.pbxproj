@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		910223B615E678EE00709558 /* BMI.m in Sources */ = {isa = PBXBuildFile; fileRef = 910223B515E678EE00709558 /* BMI.m */; };
+		910223BA15E67D6400709558 /* Study.m in Sources */ = {isa = PBXBuildFile; fileRef = 910223B915E67D6400709558 /* Study.m */; };
+		91DF7C4915D4353200D83CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DF7C4815D4353200D83CE5 /* Foundation.framework */; };
+		91DF7C4C15D4353200D83CE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DF7C4B15D4353200D83CE5 /* main.m */; };
+		91DF7C5015D4353200D83CE5 /* BMI.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91DF7C4F15D4353200D83CE5 /* BMI.1 */; };
+		91E7F4AD15DC41440092E94F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E7F4AC15DC41440092E94F /* Person.m */; };
+		91E7F4B915DC49110092E94F /* MetricConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E7F4B815DC49110092E94F /* MetricConverter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91DF7C4215D4353200D83CE5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				91DF7C5015D4353200D83CE5 /* BMI.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		910223B415E678EE00709558 /* BMI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMI.h; sourceTree = "<group>"; };
+		910223B515E678EE00709558 /* BMI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMI.m; sourceTree = "<group>"; };
+		910223B815E67D6400709558 /* Study.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Study.h; sourceTree = "<group>"; };
+		910223B915E67D6400709558 /* Study.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Study.m; sourceTree = "<group>"; };
+		91DF7C4415D4353200D83CE5 /* BMI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BMI; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DF7C4815D4353200D83CE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91DF7C4B15D4353200D83CE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91DF7C4E15D4353200D83CE5 /* BMI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMI-Prefix.pch"; sourceTree = "<group>"; };
+		91DF7C4F15D4353200D83CE5 /* BMI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BMI.1; sourceTree = "<group>"; };
+		91E7F4AB15DC41440092E94F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		91E7F4AC15DC41440092E94F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		91E7F4B715DC49110092E94F /* MetricConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetricConverter.h; sourceTree = "<group>"; };
+		91E7F4B815DC49110092E94F /* MetricConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetricConverter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91DF7C4115D4353200D83CE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DF7C4915D4353200D83CE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91DF7C3915D4353200D83CE5 = {
+			isa = PBXGroup;
+			children = (
+				91DF7C4A15D4353200D83CE5 /* BMI */,
+				91DF7C4715D4353200D83CE5 /* Frameworks */,
+				91DF7C4515D4353200D83CE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91DF7C4515D4353200D83CE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91DF7C4415D4353200D83CE5 /* BMI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91DF7C4715D4353200D83CE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91DF7C4815D4353200D83CE5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91DF7C4A15D4353200D83CE5 /* BMI */ = {
+			isa = PBXGroup;
+			children = (
+				91DF7C4B15D4353200D83CE5 /* main.m */,
+				91DF7C4F15D4353200D83CE5 /* BMI.1 */,
+				91DF7C4D15D4353200D83CE5 /* Supporting Files */,
+				91E7F4AB15DC41440092E94F /* Person.h */,
+				91E7F4AC15DC41440092E94F /* Person.m */,
+				91E7F4B715DC49110092E94F /* MetricConverter.h */,
+				91E7F4B815DC49110092E94F /* MetricConverter.m */,
+				910223B415E678EE00709558 /* BMI.h */,
+				910223B515E678EE00709558 /* BMI.m */,
+				910223B815E67D6400709558 /* Study.h */,
+				910223B915E67D6400709558 /* Study.m */,
+			);
+			path = BMI;
+			sourceTree = "<group>";
+		};
+		91DF7C4D15D4353200D83CE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91DF7C4E15D4353200D83CE5 /* BMI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91DF7C4315D4353200D83CE5 /* BMI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91DF7C5315D4353200D83CE5 /* Build configuration list for PBXNativeTarget "BMI" */;
+			buildPhases = (
+				91DF7C4015D4353200D83CE5 /* Sources */,
+				91DF7C4115D4353200D83CE5 /* Frameworks */,
+				91DF7C4215D4353200D83CE5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMI;
+			productName = BMI;
+			productReference = 91DF7C4415D4353200D83CE5 /* BMI */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91DF7C3B15D4353200D83CE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Matthew Campbell";
+			};
+			buildConfigurationList = 91DF7C3E15D4353200D83CE5 /* Build configuration list for PBXProject "BMI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 91DF7C3915D4353200D83CE5;
+			productRefGroup = 91DF7C4515D4353200D83CE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91DF7C4315D4353200D83CE5 /* BMI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91DF7C4015D4353200D83CE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91DF7C4C15D4353200D83CE5 /* main.m in Sources */,
+				91E7F4AD15DC41440092E94F /* Person.m in Sources */,
+				91E7F4B915DC49110092E94F /* MetricConverter.m in Sources */,
+				910223B615E678EE00709558 /* BMI.m in Sources */,
+				910223BA15E67D6400709558 /* Study.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		91DF7C5115D4353200D83CE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		91DF7C5215D4353200D83CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		91DF7C5415D4353200D83CE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMI/BMI-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		91DF7C5515D4353200D83CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMI/BMI-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91DF7C3E15D4353200D83CE5 /* Build configuration list for PBXProject "BMI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91DF7C5115D4353200D83CE5 /* Debug */,
+				91DF7C5215D4353200D83CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91DF7C5315D4353200D83CE5 /* Build configuration list for PBXNativeTarget "BMI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91DF7C5415D4353200D83CE5 /* Debug */,
+				91DF7C5515D4353200D83CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91DF7C3B15D4353200D83CE5 /* Project object */;
+}
