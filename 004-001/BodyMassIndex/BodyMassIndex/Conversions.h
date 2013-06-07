@@ -10,13 +10,11 @@
 
 @interface Conversions : NSObject
 
-NSNumber * getBMI(float weightInKg, float heightInCm);
-NSString * getHeight(float inches);
-NSString * getBMILevel(NSNumber * bmi);
++(NSString *) getFeetAndInches:(float)inches;
 
-float getKg(float lbs);
-float getLbs(float kg);
-float getCm(float inches);
-float getInches(float cm);
++(float) getKg:(float)lbs;
++(float) getLbs:(float)kg;
++(float) getCm:(float)inches;
++(float) getInches:(float)cm;
 
 @end

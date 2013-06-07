@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0329CF841761BE630057297E /* BodyMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329CF831761BE630057297E /* BodyMetrics.m */; };
 		0368364017559BAD002D526D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0368363F17559BAD002D526D /* Foundation.framework */; };
 		0368364317559BAD002D526D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0368364217559BAD002D526D /* main.m */; };
 		0368364717559BAD002D526D /* BodyMassIndex.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0368364617559BAD002D526D /* BodyMassIndex.1 */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0329CF821761BE630057297E /* BodyMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyMetrics.h; sourceTree = "<group>"; };
+		0329CF831761BE630057297E /* BodyMetrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BodyMetrics.m; sourceTree = "<group>"; };
 		0368363C17559BAD002D526D /* BodyMassIndex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BodyMassIndex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0368363F17559BAD002D526D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0368364217559BAD002D526D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 				0368364217559BAD002D526D /* main.m */,
 				0368364617559BAD002D526D /* BodyMassIndex.1 */,
 				0368364417559BAD002D526D /* Supporting Files */,
+				0329CF821761BE630057297E /* BodyMetrics.h */,
+				0329CF831761BE630057297E /* BodyMetrics.m */,
 			);
 			path = BodyMassIndex;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			files = (
 				0368364317559BAD002D526D /* main.m in Sources */,
 				0368364F17559DDA002D526D /* Conversions.m in Sources */,
+				0329CF841761BE630057297E /* BodyMetrics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +254,7 @@
 				0368364C17559BAD002D526D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
