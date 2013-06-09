@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Study.h"
 
-@interface DataHandler : NSObject
+@interface DataHandler : NSObject<StudyDelegate>
 
 @end

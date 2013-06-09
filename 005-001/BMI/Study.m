@@ -11,14 +11,23 @@
 
 @implementation Study
 
--(void)calculateStatistics{
-    float averageBMI = 0;
+-(void)calculateStatistics
+{
+    float totalBMI = 0.0;
     long numberOfPeople = [self.people count];
     
-    for(Person *p in self.people)
-        averageBMI = averageBMI + [p.bmi.measurement floatValue];
-    averageBMI = averageBMI / numberOfPeople;
+    for (Person *p in self.people)
+        totalBMI += [p.bmi.measurement floatValue];
+
+    float averageBMI = totalBMI / numberOfPeople;
     
+    [self.delegate logStatistic:averageBMI
+             withNumberOfPeople:numberOfPeople];
+}
+
+-(void)dealloc
+{
+    self.delegate = nil;
 }
 
 @end

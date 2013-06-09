@@ -8,7 +8,28 @@
 
 #import <Foundation/Foundation.h>
 #import "Study.h"
+#import "DataHandler.h"
 #import "BMI.h"
+
+/**
+@interface BMI (MyBMICategory)
+
+-(NSNumber *)measurement;
+
+@end
+
+@implementation BMI (MyBMICategory)
+
+-(NSNumber *)measurement
+{
+ if (_measurement) return _measurement;  // RETURN measurement if we already have it //
+    
+    _measurement = [NSNumber numberWithFloat:703 * self.person.weight / self.person.height];
+    
+    return _measurement;
+}
+@end
+***/
 
 int main(int argc, const char * argv[]){
     @autoreleasepool {
@@ -19,9 +40,12 @@ int main(int argc, const char * argv[]){
         [[Person alloc]initWithName:@"Jim" thisHeight:61 thisWeight:90],
         [[Person alloc]initWithName:@"Tori" thisHeight:59 thisWeight:105]];
         
+        // Instantiate new data handler:
+        DataHandler *dataHandler = [[DataHandler alloc] init];
+        
         //Instantiate new study
         Study *studyObject = [[Study alloc] init];
-
+        studyObject.delegate = dataHandler;
         studyObject.people = [NSMutableArray arrayWithArray:people];
         [studyObject calculateStatistics];
         

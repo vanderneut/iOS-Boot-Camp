@@ -10,4 +10,10 @@
 
 @implementation DataHandler
 
+-(void)logStatistic:(float)averageBMI
+ withNumberOfPeople:(long)numberOfPeople
+{
+    NSLog(@"Study results: average BMI of %f.1 over %li people", averageBMI, numberOfPeople);
+}
+
 @end

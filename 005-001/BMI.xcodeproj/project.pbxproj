@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031348D11763CD1B00C6FC57 /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 031348D01763CD1B00C6FC57 /* DataHandler.m */; };
 		910223B615E678EE00709558 /* BMI.m in Sources */ = {isa = PBXBuildFile; fileRef = 910223B515E678EE00709558 /* BMI.m */; };
 		910223BA15E67D6400709558 /* Study.m in Sources */ = {isa = PBXBuildFile; fileRef = 910223B915E67D6400709558 /* Study.m */; };
 		91DF7C4915D4353200D83CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DF7C4815D4353200D83CE5 /* Foundation.framework */; };
@@ -30,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		031348CF1763CD1B00C6FC57 /* DataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandler.h; sourceTree = "<group>"; };
+		031348D01763CD1B00C6FC57 /* DataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHandler.m; sourceTree = "<group>"; };
 		910223B415E678EE00709558 /* BMI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMI.h; sourceTree = "<group>"; };
 		910223B515E678EE00709558 /* BMI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMI.m; sourceTree = "<group>"; };
 		910223B815E67D6400709558 /* Study.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Study.h; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				910223B415E678EE00709558 /* BMI.h */,
 				910223B515E678EE00709558 /* BMI.m */,
 				910223B815E67D6400709558 /* Study.h */,
+				031348CF1763CD1B00C6FC57 /* DataHandler.h */,
+				031348D01763CD1B00C6FC57 /* DataHandler.m */,
 				910223B915E67D6400709558 /* Study.m */,
 			);
 			path = BMI;
@@ -164,6 +169,7 @@
 				91E7F4B915DC49110092E94F /* MetricConverter.m in Sources */,
 				910223B615E678EE00709558 /* BMI.m in Sources */,
 				910223BA15E67D6400709558 /* Study.m in Sources */,
+				031348D11763CD1B00C6FC57 /* DataHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
