@@ -1,19 +1,19 @@
 //
-//  BodyMetrics.m
+//  Person.m
 //  BodyMassIndex
 //
 //  Created by Erik van der Neut on 6/7/13.
 //  Copyright (c) 2013 Erik van der Neut. All rights reserved.
 //
 
-#import "BodyMetrics.h"
+#import "Person.h"
 #import "Conversions.h"
 
-@interface BodyMetrics ()
+@interface Person()
 
 @end
 
-@implementation BodyMetrics
+@implementation Person
 
 -(id) initMetricsForPerson:(char *)name
            withWeightInLbs:(float)lbs

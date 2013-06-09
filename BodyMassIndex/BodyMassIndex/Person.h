@@ -1,5 +1,5 @@
 //
-//  BodyMetrics.h
+//  Person.h
 //  BodyMassIndex
 //
 //  Created by Erik van der Neut on 6/7/13.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BodyMetrics : NSObject
+@interface Person : NSObject
 
-@property char * name;             // person's name
+@property char * name;          // person's name
 @property float weightInLbs;    // person's weight in lbs
 @property float heightInInches; // person's height in inches
 
