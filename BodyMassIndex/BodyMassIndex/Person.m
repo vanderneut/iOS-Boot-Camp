@@ -47,7 +47,7 @@
 -(NSString *) getBMILevel
 {
     NSNumber *bmi = [self getBMI];
-    return [self getBMILevel:bmi];
+    return [Person getBMILevel:bmi];
 }
 
 /**
@@ -56,7 +56,7 @@
  * @param   NSNumber    bmi
  * @return              BMI level
  */
--(NSString *) getBMILevel:(NSNumber *)bmi
++(NSString *) getBMILevel:(NSNumber *)bmi
 {
     if      ([bmi floatValue] < 18.5) return @"Underweight";
     else if ([bmi floatValue] < 25)   return @"Normal";

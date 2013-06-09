@@ -19,6 +19,7 @@
         withHeightInInches:(float)inches;
 -(NSNumber *) getBMI;
 -(NSString *) getBMILevel;
--(NSString *) getBMILevel:bmi;
+
++(NSString *) getBMILevel:bmi;
 
 @end
