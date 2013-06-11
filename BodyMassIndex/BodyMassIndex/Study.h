@@ -8,9 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol StudyDelegate <NSObject>
+
+@required
+-(void)logStatistic:(float)averageBMI
+  withAverageHeight:(float)averageHeight
+  withAverageWeight:(float)averageWeight
+ withNumberOfPeople:(long)numberOfPeople;
+@end
+
+
 @interface Study : NSObject
 
-@property NSMutableArray *people;
+@property(strong)NSMutableArray *people;
+@property(assign)id<StudyDelegate> delegate;
 
 -(void)calculateAndReportStats;
 

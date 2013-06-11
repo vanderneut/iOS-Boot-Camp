@@ -9,6 +9,7 @@
 #import "Study.h"
 #import "Person.h"
 #import "Conversions.h"
+#import "BMI.h"
 
 @implementation Study
 
@@ -24,7 +25,7 @@
         Person *person = self.people[i];
         
         // Calculate BMI, and create height string:
-        NSNumber *bmi    = [person getBMI];
+        NSNumber *bmi    = [person.bmi getBMI];
         NSString *height = [Conversions getFeetAndInches:[person heightInInches]];
         
         // Write the report for this person:
@@ -32,7 +33,7 @@
         NSLog(@"- Height    : %@",          height);
         NSLog(@"- Weight    : %.0f lbs",    [person weightInLbs]);
         NSLog(@"- BMI       : %.1f",        [bmi floatValue]);
-        NSLog(@"- BMI Level : %@\n\n",      [Person getBMILevel:bmi]);
+        NSLog(@"- BMI Level : %@\n\n",      [BMI getBMILevel:bmi]);
 
         totalHeight += [person heightInInches];
         totalWeight += [person weightInLbs];
@@ -43,13 +44,15 @@
     float averageWeight = totalWeight / numberOfPeople;
     float averageBMI    = totalBMI / numberOfPeople;
 
-    // Write the report for this person:
-    NSLog(@"Aggregate study results:");
-    NSLog(@"- Number of people  : %ld", numberOfPeople);
-    NSLog(@"- Average height    : %@", [Conversions getFeetAndInches:averageHeight]);
-    NSLog(@"- Average weight    : %.0f lbs", averageWeight);
-    NSLog(@"- Average BMI       : %.1f", averageBMI);
-    NSLog(@"- Average BMI Level : %@\n\n", [Person getBMILevel:[[NSNumber alloc] initWithFloat:averageBMI]]);
+    [self.delegate logStatistic:averageBMI
+              withAverageHeight:averageHeight
+              withAverageWeight:averageWeight
+             withNumberOfPeople:numberOfPeople];
+}
+
+-(void)dealloc
+{
+    self.delegate = nil;
 }
 
 @end

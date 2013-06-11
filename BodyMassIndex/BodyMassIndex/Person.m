@@ -7,6 +7,7 @@
 //
 
 #import "Person.h"
+#import "BMI.h"
 #import "Conversions.h"
 
 @interface Person()
@@ -20,23 +21,15 @@
         withHeightInInches:(float)inches
 {
     self = [super init];
-    self.name           = name;
-    self.weightInLbs    = lbs;
-    self.heightInInches = inches;
-    
+    if (self)
+    {
+        self.name           = name;
+        self.weightInLbs    = lbs;
+        self.heightInInches = inches;
+        self.bmi = [[BMI alloc] init];
+        self.bmi.person = self;
+    }
     return self;
-}
-
-/**
- * Returns the Body Mass Index (BMI), based on the person's weight and height
- *
- * @return              BMI
- */
--(NSNumber *) getBMI
-{
-    float weightInKg = [Conversions getKg:[self weightInLbs]];
-    float heightInCm = [Conversions getCm:[self heightInInches]];
-    return [NSNumber numberWithFloat:weightInKg / powf(0.01 * heightInCm, 2.0)];
 }
 
 /**
@@ -46,22 +39,8 @@
  */
 -(NSString *) getBMILevel
 {
-    NSNumber *bmi = [self getBMI];
-    return [Person getBMILevel:bmi];
-}
-
-/**
- * Returns a string containing a qualifying description of the given BMI level.
- *
- * @param   NSNumber    bmi
- * @return              BMI level
- */
-+(NSString *) getBMILevel:(NSNumber *)bmi
-{
-    if      ([bmi floatValue] < 18.5) return @"Underweight";
-    else if ([bmi floatValue] < 25)   return @"Normal";
-    else if ([bmi floatValue] < 30)   return @"Overweight";
-    else                              return @"Obese";
+    NSNumber *bmi = [self.bmi getBMI];
+    return [BMI getBMILevel:bmi];
 }
 
 @end

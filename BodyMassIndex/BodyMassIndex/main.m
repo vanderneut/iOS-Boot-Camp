@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Conversions.h"
+#import "DataHandler.h"
 #import "Person.h"
 #import "Study.h"
 
@@ -23,7 +24,11 @@ int main(int argc, const char * argv[])
                           [[Person alloc] initMetricsForPerson:"Erik" withWeightInLbs:134.0 withHeightInInches:67.0],
                           [[Person alloc] initMetricsForPerson:"Lorah" withWeightInLbs:110.0 withHeightInInches:62.0]];
 
+        // Instantiate data handler:
+        DataHandler *dataHandler = [[DataHandler alloc] init];
+        
         Study *study = [[Study alloc] init];
+        study.delegate = dataHandler;
         study.people = [NSMutableArray arrayWithArray:data];
         
         [study calculateAndReportStats];        

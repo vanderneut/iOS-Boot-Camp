@@ -7,19 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+@class BMI;
 
 @interface Person : NSObject
 
-@property char * name;          // person's name
-@property float weightInLbs;    // person's weight in lbs
-@property float heightInInches; // person's height in inches
+@property (assign) char * name;          // person's name
+@property (assign) float weightInLbs;    // person's weight in lbs
+@property (assign) float heightInInches; // person's height in inches
+@property (strong) BMI *bmi;             // person's Body Mass Index
 
 -(id) initMetricsForPerson:(char *)name
            withWeightInLbs:(float)lbs
         withHeightInInches:(float)inches;
--(NSNumber *) getBMI;
+//-(NSNumber *) getBMI;
 -(NSString *) getBMILevel;
-
-+(NSString *) getBMILevel:bmi;
 
 @end

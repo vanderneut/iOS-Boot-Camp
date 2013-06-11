@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Person;
 
 @interface BMI : NSObject
+{
+    @private
+    NSNumber *_measurement;
+    NSString *_level;
+}
+
+@property(strong)Person *person;
+@property(readonly, strong)NSNumber *measurement;
+@property(readonly, strong)NSString *level;
+
+-(NSNumber *) getBMI;
++(NSString *) getBMILevel:(NSNumber *)bmi;
 
 @end

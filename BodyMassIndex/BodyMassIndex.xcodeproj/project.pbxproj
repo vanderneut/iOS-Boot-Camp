@@ -14,6 +14,7 @@
 		0368364317559BAD002D526D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0368364217559BAD002D526D /* main.m */; };
 		0368364717559BAD002D526D /* BodyMassIndex.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0368364617559BAD002D526D /* BodyMassIndex.1 */; };
 		0368364F17559DDA002D526D /* Conversions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0368364E17559DDA002D526D /* Conversions.m */; };
+		03D04A821767A38400B3182D /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D04A811767A38400B3182D /* DataHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		0368364617559BAD002D526D /* BodyMassIndex.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BodyMassIndex.1; sourceTree = "<group>"; };
 		0368364D17559DDA002D526D /* Conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversions.h; sourceTree = "<group>"; };
 		0368364E17559DDA002D526D /* Conversions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversions.m; sourceTree = "<group>"; };
+		03D04A801767A38400B3182D /* DataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandler.h; sourceTree = "<group>"; };
+		03D04A811767A38400B3182D /* DataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				0368364D17559DDA002D526D /* Conversions.h */,
 				0368364E17559DDA002D526D /* Conversions.m */,
 				0368364217559BAD002D526D /* main.m */,
+				03D04A801767A38400B3182D /* DataHandler.h */,
+				03D04A811767A38400B3182D /* DataHandler.m */,
 				0323C44D17650BB2009CEB0B /* BMI.h */,
 				0323C44E17650BB2009CEB0B /* BMI.m */,
 				0323C45017650BC3009CEB0B /* Study.h */,
@@ -164,6 +169,7 @@
 				0329CF841761BE630057297E /* Person.m in Sources */,
 				0323C44F17650BB2009CEB0B /* BMI.m in Sources */,
 				0323C45217650BC3009CEB0B /* Study.m in Sources */,
+				03D04A821767A38400B3182D /* DataHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
