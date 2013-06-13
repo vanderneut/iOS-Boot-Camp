@@ -10,6 +10,8 @@
 
 @interface EVAppContent : NSObject
 
++(EVAppContent *) sharedContent;
+
 @property (strong) NSString *name;
 @property (strong) NSMutableArray *contentTypes;
 

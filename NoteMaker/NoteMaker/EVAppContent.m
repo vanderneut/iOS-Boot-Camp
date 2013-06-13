@@ -11,6 +11,19 @@
 @implementation EVAppContent
 @synthesize name, contentTypes;
 
+static EVAppContent *singletonInstance = nil;
+
++(EVAppContent *) sharedContent
+{
+    @synchronized(self)
+    {
+        if (singletonInstance == nil)
+            singletonInstance = [[self alloc] init];
+        
+        return singletonInstance;
+    }
+}
+
 -(id)init
 {
     self = [super init];
