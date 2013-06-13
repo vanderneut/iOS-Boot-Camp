@@ -15,6 +15,7 @@
 UILabel *myLabel;
 UIButton *myButton;
 
+/******* comment out the 003-001 exercise code: ************
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -40,6 +41,7 @@ UIButton *myButton;
     EVAppContent *content = [EVAppContent sharedContent];
     myLabel.text = content.name;
 }
+************************************************************/
 
 /******* comment out the auto-injected code: ***********
  
