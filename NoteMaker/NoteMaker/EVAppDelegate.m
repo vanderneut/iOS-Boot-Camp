@@ -10,6 +10,37 @@
 
 @implementation EVAppDelegate
 
+@synthesize window = _window;       // <-- What does that do..?
+
+UILabel *myLabel;
+UIButton *myButton;
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    myLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 280, 40)];
+    myLabel.text = @"Please don't click the button below - Okay?";
+    [self.window addSubview:myLabel];
+    
+    myButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    myButton.frame = CGRectMake(110, 200, 100, 50);
+    [self.window addSubview:myButton];
+    
+    [myButton addTarget:self
+                 action:@selector(onMyButtonClick)
+       forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)onMyButtonClick
+{
+    myLabel.text = @"Nooooo... you didn't!!";
+}
+
+/******* comment out the auto-injected code: ***********
+ 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -45,5 +76,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+************************************************************/
 
 @end
