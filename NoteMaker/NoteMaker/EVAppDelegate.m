@@ -22,7 +22,7 @@ UIButton *myButton;
     [self.window makeKeyAndVisible];
     
     myLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 280, 40)];
-    myLabel.text = @"Please don't click the button below - Okay?";
+    myLabel.text = @"Click button to see application name";
     [self.window addSubview:myLabel];
     
     myButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -36,7 +36,9 @@ UIButton *myButton;
 
 - (void)onMyButtonClick
 {
-    myLabel.text = @"Nooooo... you didn't!!";
+    // Get pointer to the Singleton that holds the data:
+    EVAppContent *content = [EVAppContent sharedContent];
+    myLabel.text = content.name;
 }
 
 /******* comment out the auto-injected code: ***********

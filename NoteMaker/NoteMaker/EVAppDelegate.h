@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EVAppContent.h"
 
 @interface EVAppDelegate : UIResponder <UIApplicationDelegate>
 
