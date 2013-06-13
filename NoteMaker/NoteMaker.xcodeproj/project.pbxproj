@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		039D1E91176A10550027BFAD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 039D1E90176A10550027BFAD /* Default-568h@2x.png */; };
+		03D04A901767F4EF00B3182D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D04A8F1767F4EF00B3182D /* UIKit.framework */; };
+		03D04A921767F4EF00B3182D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D04A911767F4EF00B3182D /* Foundation.framework */; };
+		03D04A941767F4EF00B3182D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D04A931767F4EF00B3182D /* CoreGraphics.framework */; };
+		03D04A9A1767F4EF00B3182D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03D04A981767F4EF00B3182D /* InfoPlist.strings */; };
+		03D04A9C1767F4EF00B3182D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D04A9B1767F4EF00B3182D /* main.m */; };
+		03D04AA01767F4EF00B3182D /* EVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D04A9F1767F4EF00B3182D /* EVAppDelegate.m */; };
+		03D04AAD1767F88800B3182D /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D04AAC1767F88800B3182D /* icon_57.png */; };
+		03D04AAF1767F88C00B3182D /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D04AAE1767F88C00B3182D /* icon_114.png */; };
+		03D04AB11767F8AC00B3182D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D04AB01767F8AC00B3182D /* Default.png */; };
+		03D04AB31767F8C100B3182D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03D04AB21767F8C100B3182D /* Default@2x.png */; };
+		03D04AB61767FF8A00B3182D /* EVAppContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D04AB51767FF8A00B3182D /* EVAppContent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		039D1E90176A10550027BFAD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		03D04A8C1767F4EF00B3182D /* NoteMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D04A8F1767F4EF00B3182D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03D04A911767F4EF00B3182D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03D04A931767F4EF00B3182D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03D04A971767F4EF00B3182D /* NoteMaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NoteMaker-Info.plist"; sourceTree = "<group>"; };
+		03D04A991767F4EF00B3182D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03D04A9B1767F4EF00B3182D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03D04A9D1767F4EF00B3182D /* NoteMaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoteMaker-Prefix.pch"; sourceTree = "<group>"; };
+		03D04A9E1767F4EF00B3182D /* EVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVAppDelegate.h; sourceTree = "<group>"; };
+		03D04A9F1767F4EF00B3182D /* EVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVAppDelegate.m; sourceTree = "<group>"; };
+		03D04AAC1767F88800B3182D /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
+		03D04AAE1767F88C00B3182D /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
+		03D04AB01767F8AC00B3182D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		03D04AB21767F8C100B3182D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		03D04AB41767FF8A00B3182D /* EVAppContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAppContent.h; sourceTree = "<group>"; };
+		03D04AB51767FF8A00B3182D /* EVAppContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAppContent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03D04A891767F4EF00B3182D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D04A901767F4EF00B3182D /* UIKit.framework in Frameworks */,
+				03D04A921767F4EF00B3182D /* Foundation.framework in Frameworks */,
+				03D04A941767F4EF00B3182D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03BB7E8417680022002F351F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				039D1E90176A10550027BFAD /* Default-568h@2x.png */,
+				03D04AB21767F8C100B3182D /* Default@2x.png */,
+				03D04AB01767F8AC00B3182D /* Default.png */,
+				03D04AAE1767F88C00B3182D /* icon_114.png */,
+				03D04AAC1767F88800B3182D /* icon_57.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		03BB7E8517680097002F351F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				03D04AB41767FF8A00B3182D /* EVAppContent.h */,
+				03D04AB51767FF8A00B3182D /* EVAppContent.m */,
+				03D04A9E1767F4EF00B3182D /* EVAppDelegate.h */,
+				03D04A9F1767F4EF00B3182D /* EVAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		03D04A831767F4EF00B3182D = {
+			isa = PBXGroup;
+			children = (
+				03BB7E8417680022002F351F /* Assets */,
+				03D04A951767F4EF00B3182D /* NoteMaker */,
+				03D04A8E1767F4EF00B3182D /* Frameworks */,
+				03D04A8D1767F4EF00B3182D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03D04A8D1767F4EF00B3182D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03D04A8C1767F4EF00B3182D /* NoteMaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03D04A8E1767F4EF00B3182D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D04A8F1767F4EF00B3182D /* UIKit.framework */,
+				03D04A911767F4EF00B3182D /* Foundation.framework */,
+				03D04A931767F4EF00B3182D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D04A951767F4EF00B3182D /* NoteMaker */ = {
+			isa = PBXGroup;
+			children = (
+				03BB7E8517680097002F351F /* Classes */,
+				03D04A961767F4EF00B3182D /* Supporting Files */,
+			);
+			path = NoteMaker;
+			sourceTree = "<group>";
+		};
+		03D04A961767F4EF00B3182D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03D04A971767F4EF00B3182D /* NoteMaker-Info.plist */,
+				03D04A981767F4EF00B3182D /* InfoPlist.strings */,
+				03D04A9B1767F4EF00B3182D /* main.m */,
+				03D04A9D1767F4EF00B3182D /* NoteMaker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03D04A8B1767F4EF00B3182D /* NoteMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D04AA91767F4EF00B3182D /* Build configuration list for PBXNativeTarget "NoteMaker" */;
+			buildPhases = (
+				03D04A881767F4EF00B3182D /* Sources */,
+				03D04A891767F4EF00B3182D /* Frameworks */,
+				03D04A8A1767F4EF00B3182D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteMaker;
+			productName = NoteMaker;
+			productReference = 03D04A8C1767F4EF00B3182D /* NoteMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03D04A841767F4EF00B3182D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EV;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Erik van der Neut";
+			};
+			buildConfigurationList = 03D04A871767F4EF00B3182D /* Build configuration list for PBXProject "NoteMaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03D04A831767F4EF00B3182D;
+			productRefGroup = 03D04A8D1767F4EF00B3182D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03D04A8B1767F4EF00B3182D /* NoteMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03D04A8A1767F4EF00B3182D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D04A9A1767F4EF00B3182D /* InfoPlist.strings in Resources */,
+				03D04AAD1767F88800B3182D /* icon_57.png in Resources */,
+				03D04AAF1767F88C00B3182D /* icon_114.png in Resources */,
+				03D04AB11767F8AC00B3182D /* Default.png in Resources */,
+				03D04AB31767F8C100B3182D /* Default@2x.png in Resources */,
+				039D1E91176A10550027BFAD /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03D04A881767F4EF00B3182D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D04A9C1767F4EF00B3182D /* main.m in Sources */,
+				03D04AA01767F4EF00B3182D /* EVAppDelegate.m in Sources */,
+				03D04AB61767FF8A00B3182D /* EVAppContent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03D04A981767F4EF00B3182D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D04A991767F4EF00B3182D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03D04AA71767F4EF00B3182D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03D04AA81767F4EF00B3182D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03D04AAA1767F4EF00B3182D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoteMaker/NoteMaker-Prefix.pch";
+				INFOPLIST_FILE = "NoteMaker/NoteMaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		03D04AAB1767F4EF00B3182D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoteMaker/NoteMaker-Prefix.pch";
+				INFOPLIST_FILE = "NoteMaker/NoteMaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03D04A871767F4EF00B3182D /* Build configuration list for PBXProject "NoteMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D04AA71767F4EF00B3182D /* Debug */,
+				03D04AA81767F4EF00B3182D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D04AA91767F4EF00B3182D /* Build configuration list for PBXNativeTarget "NoteMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D04AAA1767F4EF00B3182D /* Debug */,
+				03D04AAB1767F4EF00B3182D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03D04A841767F4EF00B3182D /* Project object */;
+}
