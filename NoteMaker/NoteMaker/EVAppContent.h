@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Notebook.h"                                    // Step 5-1 of Core Data exercise
+#import "Note.h"                                        // Step 7-1 of Core Data exercise
 
 @interface EVAppContent : NSObject
 
@@ -14,5 +16,6 @@
 
 @property (strong) NSString *name;
 @property (strong) NSMutableArray *contentTypes;
+@property (strong, readonly) Notebook *notebook;        // Step 5-2 of Core Data exercise
 
 @end
