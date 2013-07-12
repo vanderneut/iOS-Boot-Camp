@@ -11,6 +11,7 @@
 		032812B21786721F00714468 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 032812B11786721F00714468 /* Note.m */; };
 		03514B37178B6E3A00AF9FCC /* EVNotesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 03514B36178B6E3A00AF9FCC /* EVNotesTVC.m */; };
 		0356FB58178B2D9F00FB0276 /* EVNotebookDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0356FB57178B2D9F00FB0276 /* EVNotebookDetailsVC.m */; };
+		035B60CE17908FC700A2C0CD /* EVNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 035B60CD17908FC600A2C0CD /* EVNoteVC.m */; };
 		039D1E91176A10550027BFAD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 039D1E90176A10550027BFAD /* Default-568h@2x.png */; };
 		039D1E93176A5B9B0027BFAD /* Storyboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039D1E92176A5B9B0027BFAD /* Storyboard_iPhone.storyboard */; };
 		03C491981778F4FC005CF231 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C491971778F4FC005CF231 /* CoreData.framework */; };
@@ -37,6 +38,8 @@
 		03514B36178B6E3A00AF9FCC /* EVNotesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNotesTVC.m; sourceTree = "<group>"; };
 		0356FB56178B2D9F00FB0276 /* EVNotebookDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNotebookDetailsVC.h; sourceTree = "<group>"; };
 		0356FB57178B2D9F00FB0276 /* EVNotebookDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNotebookDetailsVC.m; sourceTree = "<group>"; };
+		035B60CC17908FC600A2C0CD /* EVNoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNoteVC.h; sourceTree = "<group>"; };
+		035B60CD17908FC600A2C0CD /* EVNoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNoteVC.m; sourceTree = "<group>"; };
 		039D1E90176A10550027BFAD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		039D1E92176A5B9B0027BFAD /* Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard_iPhone.storyboard; path = ../Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
 		03C491971778F4FC005CF231 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -81,6 +84,8 @@
 				0356FB57178B2D9F00FB0276 /* EVNotebookDetailsVC.m */,
 				03514B35178B6E3A00AF9FCC /* EVNotesTVC.h */,
 				03514B36178B6E3A00AF9FCC /* EVNotesTVC.m */,
+				035B60CC17908FC600A2C0CD /* EVNoteVC.h */,
+				035B60CD17908FC600A2C0CD /* EVNoteVC.m */,
 			);
 			name = Controllers_iPhone;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				032812B21786721F00714468 /* Note.m in Sources */,
 				0356FB58178B2D9F00FB0276 /* EVNotebookDetailsVC.m in Sources */,
 				03514B37178B6E3A00AF9FCC /* EVNotesTVC.m in Sources */,
+				035B60CE17908FC700A2C0CD /* EVNoteVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

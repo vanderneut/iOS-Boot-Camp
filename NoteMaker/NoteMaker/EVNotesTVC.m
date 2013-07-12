@@ -8,10 +8,11 @@
 //
 
 #import "EVNotesTVC.h"
+#import "EVNoteVC.h"
 
 @implementation EVNotesTVC
 
--(void)viewDidLoad
+- (void)viewDidLoad
 {
     /**
      * Step 1-2 of Table Views exercise
@@ -34,7 +35,7 @@
 /**
  * Step 1-3 of Table Views exercise
  */
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.appContent.notebook.notes count];
 }
@@ -42,7 +43,7 @@
 /**
  * Step 1-4 of Table Views exercise
  */
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     Note *n = [[self.appContent.notebook.notes allObjects] objectAtIndex:indexPath.row];
@@ -56,7 +57,7 @@
 /**
  * Step 4-2 of Table Views exercise
  */
--(void)insertNewNote:(id)sender
+- (void)insertNewNote:(id)sender
 {
     int numRows = [self.appContent.notebook.notes count];
     [self.appContent insertNewNote];
@@ -68,7 +69,7 @@
 /**
  * Step 4-3 of Table Views exercise
  */
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
                                            forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete)
@@ -76,6 +77,26 @@
         Note *note = [[self.appContent.notebook.notes allObjects] objectAtIndex:indexPath.row];
         [self.appContent removeThisNote:note];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+/**
+ * Step 4-3 of Table Views exercise
+ */
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // If we're transitioning from a Notebook to Note detail:
+    if ([[segue identifier] isEqualToString:@"NotebookToNote"])
+    {
+        // Get the selected row from the table view:
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        // Get the corresponding Note data:
+        Note *note = [[self.appContent.notebook.notes allObjects] objectAtIndex:indexPath.row];
+        
+        // Set the Note data on the Note View Controller:
+        EVNoteVC *noteViewController = [segue destinationViewController];
+        noteViewController.note = note;
     }
 }
 
