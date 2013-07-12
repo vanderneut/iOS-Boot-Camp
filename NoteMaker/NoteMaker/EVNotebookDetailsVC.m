@@ -1,18 +1,19 @@
 //
-//  EVNotebookDetailsVCViewController.m
+//  EVNotebookDetailsVC.m
 //  NoteMaker
+//  Notebook view controller
 //
 //  Created by Erik van der Neut on 7/8/13.
 //  Copyright (c) 2013 Erik van der Neut. All rights reserved.
 //
 
-#import "EVNotebookDetailsVCViewController.h"
+#import "EVNotebookDetailsVC.h"
 
-@interface EVNotebookDetailsVCViewController ()
+@interface EVNotebookDetailsVC ()
 
 @end
 
-@implementation EVNotebookDetailsVCViewController
+@implementation EVNotebookDetailsVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

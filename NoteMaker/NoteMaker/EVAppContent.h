@@ -18,4 +18,8 @@
 @property (strong) NSMutableArray *contentTypes;
 @property (strong, readonly) Notebook *notebook;        // Step 5-2 of Core Data exercise
 
+-(void)insertNewNote;                                   // Step 3-1 of Table Views exercise
+-(void)removeThisNote:(Note *)note;                     // Step 3-2 of Table Views exercise
+-(void)save;                                            // Step 3-3 of Table Views exercise
+
 @end

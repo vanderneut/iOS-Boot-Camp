@@ -181,4 +181,39 @@ static EVAppContent *singletonInstance = nil;
     return tempString;
 }
 
+/**
+ * Step 3-1 of Table Views excercise
+ */
+-(void)insertNewNote
+{
+    NSManagedObjectContext *context = [self managedObjectContext];
+    Note *n = (Note *)[NSEntityDescription insertNewObjectForEntityForName:@"Note"
+                                                    inManagedObjectContext:context];
+    n.title = @"New note";
+    n.noteContent = @"Content for new note";
+    [self.notebook addNotesObject:n];
+}
+
+/**
+ * Step 3-2 of Table Views exercise
+ */
+-(void)removeThisNote:(Note *)note
+{
+    [[self managedObjectContext] deleteObject:note];
+    [self.notebook removeNotesObject:note];
+}
+
+/**
+ * Step 3-3 of Table Views exercise
+ */
+-(void)save
+{
+    NSError *error = nil;
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    if ([context hasChanges]) [context save:&error];
+    
+    if (error) NSLog(@"WARNING: Error saving to data store. %@", error);
+}
+
 @end
