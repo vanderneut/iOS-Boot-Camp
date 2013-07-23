@@ -41,7 +41,7 @@
 		035B60CC17908FC600A2C0CD /* EVNoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNoteVC.h; sourceTree = "<group>"; };
 		035B60CD17908FC600A2C0CD /* EVNoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNoteVC.m; sourceTree = "<group>"; };
 		039D1E90176A10550027BFAD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		039D1E92176A5B9B0027BFAD /* Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard_iPhone.storyboard; path = ../Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
+		039D1E92176A5B9B0027BFAD /* Storyboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPhone.storyboard; sourceTree = "<group>"; };
 		03C491971778F4FC005CF231 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		03C4919A17790C29005CF231 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		03D04A8C1767F4EF00B3182D /* NoteMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +87,29 @@
 				035B60CC17908FC600A2C0CD /* EVNoteVC.h */,
 				035B60CD17908FC600A2C0CD /* EVNoteVC.m */,
 			);
-			name = Controllers_iPhone;
+			path = Controllers_iPhone;
+			sourceTree = "<group>";
+		};
+		03B7DB27179F1EB9001B6DDE /* View_iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View_iPad;
+			sourceTree = "<group>";
+		};
+		03B7DB28179F1EC3001B6DDE /* Controllers_iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers_iPad;
+			sourceTree = "<group>";
+		};
+		03B7DB29179F2382001B6DDE /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				03D04A981767F4EF00B3182D /* InfoPlist.strings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		03BB7E8417680022002F351F /* Assets */ = {
@@ -99,8 +121,7 @@
 				03D04AAE1767F88C00B3182D /* icon_114.png */,
 				03D04AAC1767F88800B3182D /* icon_57.png */,
 			);
-			name = Assets;
-			path = ..;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		03C491951778F342005CF231 /* View_iPhone */ = {
@@ -108,7 +129,7 @@
 			children = (
 				039D1E92176A5B9B0027BFAD /* Storyboard_iPhone.storyboard */,
 			);
-			name = View_iPhone;
+			path = View_iPhone;
 			sourceTree = "<group>";
 		};
 		03C491961778F366005CF231 /* Model */ = {
@@ -122,7 +143,7 @@
 				032812B01786721F00714468 /* Note.h */,
 				032812B11786721F00714468 /* Note.m */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		03D04A831767F4EF00B3182D = {
@@ -156,11 +177,16 @@
 		03D04A951767F4EF00B3182D /* NoteMaker */ = {
 			isa = PBXGroup;
 			children = (
-				0356FB55178B2D4000FB0276 /* Controllers_iPhone */,
+				03D04A971767F4EF00B3182D /* NoteMaker-Info.plist */,
+				03D04A9D1767F4EF00B3182D /* NoteMaker-Prefix.pch */,
+				03D04A9B1767F4EF00B3182D /* main.m */,
 				03D04A9E1767F4EF00B3182D /* EVAppDelegate.h */,
 				03D04A9F1767F4EF00B3182D /* EVAppDelegate.m */,
 				03C491961778F366005CF231 /* Model */,
 				03C491951778F342005CF231 /* View_iPhone */,
+				0356FB55178B2D4000FB0276 /* Controllers_iPhone */,
+				03B7DB27179F1EB9001B6DDE /* View_iPad */,
+				03B7DB28179F1EC3001B6DDE /* Controllers_iPad */,
 				03D04A961767F4EF00B3182D /* Supporting Files */,
 			);
 			path = NoteMaker;
@@ -169,13 +195,10 @@
 		03D04A961767F4EF00B3182D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				03B7DB29179F2382001B6DDE /* en.lproj */,
 				03BB7E8417680022002F351F /* Assets */,
-				03D04A971767F4EF00B3182D /* NoteMaker-Info.plist */,
-				03D04A981767F4EF00B3182D /* InfoPlist.strings */,
-				03D04A9B1767F4EF00B3182D /* main.m */,
-				03D04A9D1767F4EF00B3182D /* NoteMaker-Prefix.pch */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +291,7 @@
 				03D04A991767F4EF00B3182D /* en */,
 			);
 			name = InfoPlist.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -335,7 +359,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NoteMaker/NoteMaker-Prefix.pch";
 				INFOPLIST_FILE = "NoteMaker/NoteMaker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -346,7 +372,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NoteMaker/NoteMaker-Prefix.pch";
 				INFOPLIST_FILE = "NoteMaker/NoteMaker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
