@@ -16,7 +16,8 @@
  */
 - (void) updateDetailView
 {
-    
+    // Step 2-10 of the iPad and Universal Apps exercise:
+    self.noteTextField.text = self.note.noteContent;
 }
 
 @end

@@ -21,4 +21,14 @@
  */
 - (void) updateDetailView;
 
+/**
+ * Step 2-8 of the iPad and Universal Apps exercise
+ */
+@property (weak, nonatomic) IBOutlet UIToolbar *DVCToolbar;
+
+/**
+ * Step 2-9 of the iPad and Universal Apps exercise
+ */
+@property (weak, nonatomic) IBOutlet UITextView *noteTextField;
+
 @end

@@ -11,9 +11,35 @@
                     <view key="view" contentMode="scaleToFill" id="lKZ-9J-QQ6">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0b4-OK-4YT">
+                                <items>
+                                    <barButtonItem title="Item" id="9BU-e7-3sc"/>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGC-vq-Cyk">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NGC-vq-Cyk" firstAttribute="bottom" secondItem="lKZ-9J-QQ6" secondAttribute="bottom" type="default" id="5Qa-6Z-fgD"/>
+                            <constraint firstItem="0b4-OK-4YT" firstAttribute="top" secondItem="lKZ-9J-QQ6" secondAttribute="top" type="default" id="ZWD-2x-nJl"/>
+                            <constraint firstItem="NGC-vq-Cyk" firstAttribute="trailing" secondItem="lKZ-9J-QQ6" secondAttribute="trailing" type="default" id="bN3-xR-1JV"/>
+                            <constraint firstItem="NGC-vq-Cyk" firstAttribute="top" secondItem="0b4-OK-4YT" secondAttribute="bottom" type="default" id="edY-ss-Mjd"/>
+                            <constraint firstItem="NGC-vq-Cyk" firstAttribute="leading" secondItem="lKZ-9J-QQ6" secondAttribute="leading" type="default" id="lYP-SM-Gpp"/>
+                            <constraint firstItem="0b4-OK-4YT" firstAttribute="trailing" secondItem="lKZ-9J-QQ6" secondAttribute="trailing" type="default" id="wkf-1X-1ZD"/>
+                            <constraint firstItem="0b4-OK-4YT" firstAttribute="leading" secondItem="lKZ-9J-QQ6" secondAttribute="leading" type="default" id="xAG-xv-wNR"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <outlet property="DVCToolbar" destination="0b4-OK-4YT" id="B2X-QC-ail"/>
+                        <outlet property="noteTextField" destination="NGC-vq-Cyk" id="q8A-XS-nZU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t95-QZ-A80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,17 +105,6 @@
             <point key="canvasLocation" x="-1513" y="-463"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="EVNoteVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EVNoteVC.h"/>
-            <relationships>
-                <relationship kind="outlet" name="noteTextField" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="EVNoteVC_iPad" superclassName="EVNoteVC">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EVNoteVC_iPad.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
